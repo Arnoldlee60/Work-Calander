@@ -23,26 +23,44 @@
 <body>
     <div class="hero-image">
         <div class="hero-text">
-          <h1>Project Tracker</h1>
-          <h1 id = "time"></h1>
-          <p id = "date"></p>
+            <h2>Current Time &amp; Date: <br /> <span id="time-display">00:00:00</span></h2>
+                <form action="/action_page.php">
+                <label for="Calander">Calander:</label>
+                <input type="date" id="Calander" name="Calander">
+                <input type="submit">
+              </form>
+          <!--<h1 id = "time"></h1><p id = "date"></p>-->
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Instructions</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to addition content.
-              <input type="text" placeholder="Project Name" id = "projectName">
-              <input type="text" placeholder="Project Type" id = "projectType">
-              <input type="text" placeholder="Due Date" id = "dueDate">
-              <input type="text" placeholder="Hourly Rate" id = "hourlyRate">
-          </p>
-          <a href="#" class="btn btn-primary">Add project</a>
-        </div>
-      </div>
+
+      <table>
+        <tr>
+          <th style="width: 150px">Time</th>
+          <th style="width: 1200px">Task</th> 
+        </tr>
+        <tr>
+          <td>09:00 am</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:00 am</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:00 am</td>
+          <td>Doe</td>
+        </tr>
+      </table>
+      
 
       <script src="./js/script.js"></script>
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+     
+
 </body>
 </html>
