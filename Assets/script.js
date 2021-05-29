@@ -21,9 +21,10 @@ function updatingtime(){
     window.onload = function() {
         if(localStorage.getItem("textNineAM") !== null)
         {
-        //var temp = localStorage.getItem("textNineAM");
-        $("input:text").val("Sample Text");
-        console.log(temp);
+        var temp = localStorage.getItem("textNineAM");
+        //$("input:text").val("Sample Text");
+        $("#time1").val("asd");
+        //console.log(temp);
         }
       };
 
