@@ -6,3 +6,4 @@ function displayTime() {
   timeDisplayEl.text(rightNow);
 }
 setInterval(displayTime, 1000);
+
