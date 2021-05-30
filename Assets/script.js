@@ -1,4 +1,4 @@
-var textNineAM;
+var inputNine = document.querySelector("#time1");;
 //time function
 function updatingtime(){
     var time = moment().format("[It is currently] MMM Do YYYY hh:mm:ss");
@@ -6,27 +6,22 @@ function updatingtime(){
     }
     setInterval(updatingtime, 1000);
 
-
-
-    getInputValueNineAM();
+    //getInputValueNineAM();
     function getInputValueNineAM(){
         // Selecting the input element and get its value 
-        textNineAM = document.getElementById("time1").value;
+        var textNineAM = document.getElementById("time1").value;
         localStorage.setItem("textNineAM", textNineAM);
-        //console.log("0900: " + textNineAM);
+        console.log("0900: " + textNineAM);
+        getValueNine();
     }
-    var temp = localStorage.getItem("textNineAM");
-    //console.log(temp);
 
-    window.onload = function() {
-        if(localStorage.getItem("textNineAM") !== null)
-        {
-        var temp = localStorage.getItem("textNineAM");
-        //$("input:text").val("Sample Text");
-        $("#time1").val("asd");
-        //console.log(temp);
-        }
-      };
+    //getValueNine();
+    function getValueNine(){
+    var temp = localStorage.getItem("textNineAM");
+    $("#timex").val("asd");
+    console.log("temp is " + temp);
+    }
+
 
 // Store
 //localStorage.setItem("lastname", "Smith");
@@ -34,6 +29,13 @@ function updatingtime(){
 //document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 
 //console.log(getNine)
+
+
+
+
+
+
+
 
 
 //color change for time =========================================
