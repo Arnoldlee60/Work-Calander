@@ -13,6 +13,54 @@ function updatingtime(){
         localStorage.setItem("textNineAM", textNineAM);
         console.log("0900: " + textNineAM);
     }
+    function getInputValueTenAM(){
+        // Selecting the input element and get its value 
+        var textTenAM = document.getElementById("time2").value;
+        localStorage.setItem("textTenAM", textTenAM);
+        console.log("1000: " + textTenAM);
+    }
+    function getInputValueElevenAM(){
+        // Selecting the input element and get its value 
+        var textElevenAM = document.getElementById("time3").value;
+        localStorage.setItem("textElevenAM", textElevenAM);
+        console.log("1100: " + textElevenAM);
+    }
+    function getInputValueTwelvePM(){
+        // Selecting the input element and get its value 
+        var textTwelvePM = document.getElementById("time4").value;
+        localStorage.setItem("textTwelvePM", textTwelvePM);
+        console.log("1200: " + textTwelvePM);
+    }
+    function getInputValueOnePM(){
+        // Selecting the input element and get its value 
+        var textOnePM = document.getElementById("time5").value;
+        localStorage.setItem("textOnePM", textOnePM);
+        console.log("1300: " + textOnePM);
+    }
+    function getInputValueTwoPM(){
+        // Selecting the input element and get its value 
+        var textTwoPM = document.getElementById("time6").value;
+        localStorage.setItem("textTwoPM", textTwoPM);
+        console.log("1400: " + textOnePM);
+    }
+    function getInputValueThreePM(){
+        // Selecting the input element and get its value 
+        var textThreePM = document.getElementById("time7").value;
+        localStorage.setItem("textThreePM", textThreePM);
+        console.log("1500: " + textThreePM);
+    }
+    function getInputValueFourPM(){
+        // Selecting the input element and get its value 
+        var textFourPM = document.getElementById("time8").value;
+        localStorage.setItem("textFourPM", textFourPM);
+        console.log("1600: " + textFourPM);
+    }
+    function getInputValueFivePM(){
+        // Selecting the input element and get its value 
+        var textFivePM = document.getElementById("time9").value;
+        localStorage.setItem("textFivePM", textFivePM);
+        console.log("1700: " + textFivePM);
+    }
 
 
 // Store
@@ -23,17 +71,49 @@ function updatingtime(){
 //console.log(getNine)
 
 window.onload = function() {
-    var name = localStorage.getItem("textNineAM");
-    if (name !== null) {
-    $('#time1').val(name);
-    //console.log(name);
+    var name1 = localStorage.getItem("textNineAM");
+    if (name1 !== null) {
+    $('#time1').val(name1);
     }
+    var name2 = localStorage.getItem("textTenAM");
+    if (name2 !== null) {
+    $('#time2').val(name2);
+    }
+    var name3 = localStorage.getItem("textElevenAM");
+    if (name3 !== null) {
+    $('#time3').val(name3);
+    }
+    var name4 = localStorage.getItem("textTwelvePM");
+    if (name4 !== null) {
+    $('#time4').val(name4);
+    }
+    var name5 = localStorage.getItem("textOnePM");
+    if (name5 !== null) {
+    $('#time5').val(name5);
+    }
+    var name6 = localStorage.getItem("textTwoPM");
+    if (name6 !== null) {
+    $('#time6').val(name6);
+    }
+    var name7 = localStorage.getItem("textThreePM");
+    if (name7 !== null) {
+    $('#time7').val(name7);
+    }
+    var name8 = localStorage.getItem("textFourPM");
+    if (name8 !== null) {
+    $('#time8').val(name8);
+    }
+    var name9 = localStorage.getItem("textFivePM");
+    if (name9 !== null) {
+    $('#time9').val(name9);
+    }
+
 };
 
 
 
 
-//color change for time =========================================
+//color change for time ===========================RED is PAST GREEN is present and Gray is Future
 function updateBackground9AM() {
     var hr = (new Date()).getHours(),
       body = document.getElementById("time1"),
