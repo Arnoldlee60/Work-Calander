@@ -12,14 +12,6 @@ function updatingtime(){
         var textNineAM = document.getElementById("time1").value;
         localStorage.setItem("textNineAM", textNineAM);
         console.log("0900: " + textNineAM);
-        getValueNine();
-    }
-
-    //getValueNine();
-    function getValueNine(){
-    var temp = localStorage.getItem("textNineAM");
-    $("#timex").val("asd");
-    console.log("temp is " + temp);
     }
 
 
@@ -30,10 +22,13 @@ function updatingtime(){
 
 //console.log(getNine)
 
-
-
-
-
+window.onload = function() {
+    var name = localStorage.getItem("textNineAM");
+    if (name !== null) {
+    $('#time1').val(name);
+    //console.log(name);
+    }
+};
 
 
 
